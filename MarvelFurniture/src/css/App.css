@@ -1,0 +1,38 @@
+:root{
+        --walnut:#6B4326;
+        --walnut-deep:#4A2E19;
+        --wtxt:#f5f0f0;
+        --Btxt:#0000;
+        --brass:#8C8A2B;
+        --brass-bright:#dfda98;
+        --walnut-bright:rgba(240, 210, 100, 0.5);
+        --rust:#AE4B27;
+        --shadow: 0 18px 40px -20px rgba(34, 30, 24, 0.804);
+        del{
+        color: gray;
+        }
+        mark{
+        border-radius: 10px;
+        padding:2px;
+        background-color: #e16e41;
+        color: white;
+        font-weight: bolder;
+        }
+}
+
+*{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+}
+body{
+        width: 100%;
+}
+ul li{
+        list-style: none;
+        margin-block-start: 5px;
+}
+a{
+        text-decoration: none;
+        color: black;
+}

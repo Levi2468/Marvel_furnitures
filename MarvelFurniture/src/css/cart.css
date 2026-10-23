@@ -1,0 +1,214 @@
+.emt-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgba(239, 241, 235, 0.498);
+}
+.cart-message{
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(102, 234, 97);
+}
+
+.cart-container{
+    display: flex;
+    min-height: 60vh;
+    padding: 10px;
+    justify-content: space-between;
+    align-items:start;
+    background-color: aliceblue;
+}
+.cart-shelves{
+    display: flex;
+    width: 70%;
+    margin-inline-start: 20px;
+    gap:20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-card{
+display: flex;
+width: 100%;
+gap:20px;
+align-items: flex-start;
+height:150px;
+}
+.cart-image{
+    width: 30%;
+    height: inherit;
+    padding:5px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+.cart-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+   
+}
+.prod-details{
+    display: flex;
+    width:100%;
+    height: inherit;
+    border-radius: 15px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 15px;
+    box-shadow: var(--shadow);
+}
+.cart-card-head{
+    display: flex;
+    justify-content: space-between;
+}
+.prod-title{
+    font-size: large;
+    font-weight: bolder;
+}
+.delv{
+    color: gray;
+    font-size: small;
+}
+.add-remove{
+    display: flex;
+    justify-content: space-between;
+}
+.add-remove input{
+    width: 2em;
+}
+.prod-pricing{
+    display: flex;
+    gap:10px;
+}
+.remove-btn{
+    background-color: red;
+    padding: 5px;
+    padding-inline: 15px;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+}
+
+/* Billing section */
+.billing{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    top: 20px;
+
+}
+
+.billing-card{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 18px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.billing-card h3{
+    color: gray;
+    font-size: 1em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bill-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.95em;
+}
+
+.bill-row span:last-child{
+    text-align: right;
+}
+
+.bill-discount{
+    color: green;
+}
+
+.free-delivery{
+    color: green;
+    margin-left: 5px;
+}
+
+.bill-total{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 18px;
+    border-top: 1px dashed #bbb;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.savings{
+    color: green;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.checkout-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fb641b;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkout-btn:hover{
+    background-color: #e85b17;
+}
+
+/* Responsive layout */
+@media (max-width: 768px){
+    .cart-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart-shelves{
+        width: 100%;
+        margin-inline-start: 0;
+    }
+
+    .billing{
+        width: 100%;
+        margin-right: 0;
+        position: static;
+    }
+
+    .cart-card{
+        height: auto;
+        min-height: 150px;
+    }
+
+    .cart-image{
+        width: 30%;
+        flex-shrink: 0;
+    }
+
+    .prod-pricing{
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .cart-card-head{
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}

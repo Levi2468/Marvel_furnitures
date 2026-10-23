@@ -1,0 +1,39 @@
+.about-page{background:#f7fafa;color:#29231d;padding-bottom:30px;}
+.about-header{
+    margin:0;
+    min-height:250px;
+    display:flex;
+    align-items:center;
+    background-image:linear-gradient(90deg,rgba(25,20,15,.25),rgba(25,20,15,.05)),url('../assets/aboutusheader.jpeg');
+    background-position:center;
+    background-size:cover;
+}
+.about-header>div{width:100%;padding:55px 8%;background:rgba(221,239,246,.35);}
+.about-header h1{font-size:clamp(30px,4vw,46px);color:#221e18;margin-bottom:12px;}
+.about-header h1 span{color:#d97d05;}
+.about-header p{max-width:540px;line-height:1.7;}
+.about-overview{text-align:center;max-width:950px;margin:45px auto;padding:0 25px;}
+.about-overview h2{color:#4A2E19;margin-bottom:15px;font-size:30px;}
+.about-overview p{line-height:1.8;color:#514b43;}
+.about-sections{display:flex;flex-direction:column;gap:0;}
+.about-card{display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;gap:30px;padding:35px 7%;background:#f1efee;}
+.about-card:nth-child(even){background:#fff;}
+.about-card.reverse{flex-direction:row-reverse;}
+.about-card>div{width:45%;}
+.about-card h2{color:#d98d2a;font-size:25px;margin-bottom:15px;}
+.about-card p{line-height:1.75;color:#514b43;}
+.about-card img{width:42%;height:280px;object-fit:cover;border-radius:12px;}
+.about-offer{display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;gap:25px;margin:35px 4%;padding:25px;background:#5555da;border-radius:12px;color:white;}
+.about-offer>div{width:46%;}
+.about-offer img{width:100%;height:280px;object-fit:cover;border-radius:10px;}
+.about-offer-text{text-align:center;line-height:1.7;}
+.about-offer-text h2{font-size:24px;margin-bottom:12px;}
+.about-offer-text h3{font-size:19px;margin:12px 0;color:#fff0c9;}
+.about-offer-text a{display:inline-block;margin-top:12px;padding:10px 22px;border-radius:6px;background:#e3a531;color:#241b12;font-weight:bold;}
+@media(max-width:800px){
+    .about-card,.about-card.reverse{flex-direction:column;}
+    .about-card>div,.about-card img{width:100%;}
+    .about-card img{height:250px;}
+    .about-offer{flex-direction:column;}
+    .about-offer>div{width:100%;}
+}

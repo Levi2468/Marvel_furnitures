@@ -1,0 +1,45 @@
+footer{
+    display: grid;
+    grid-template-columns: 24% 20% 23% 24%;
+    justify-content: space-evenly;
+    gap:20px;
+    padding: 7px;
+    background-color: rgb(218, 160, 74);
+    color:rgb(87, 58, 23);
+}
+footer h4{
+    color: rgb(209, 64, 11);
+}
+footer a{
+    color:rgb(87, 58, 23);
+}
+
+footer .content{
+    padding:10px;
+    line-height: 1.2em;
+}
+
+.lists {
+    text-align: left;
+    line-height: 1em;
+    justify-self: center;;
+
+}
+footer .content p{
+    line-height: 1.2em;
+}
+
+.foot-logo{
+    width: 100px;
+    padding: 10px;
+}
+@media(max-width:660px){
+    footer{
+        grid-template-columns: repeat(2,45%);
+    }
+}
+@media(max-width:350){
+    footer{
+        grid-template-columns: repeat(1,50%);
+    }
+}
